@@ -10,3 +10,13 @@ Threads gives an unmeasurable amount of capabilities, such as `sleep(int millis)
 ## Adversities
 This implementation might come up with a certain number of issues that need to be taken care of. For instance, when the two different threads are to access the same data (say, an array or a list) due to concurrency they might try to access it at the same time or at very short intervals and cause it to deliver inadequate values. Knowing this, any variable, variable array or list that is known to be shared by two different threads is declared as volatile. This way, it is safe to send both threads to the same variable because it will behave accordingly for the concurrent processes. Moreover, the Collection of `BlockingQueue` is also thread-safe since it has methods: take and put, will patiently wait for elements inside the queue instead of returning null or throwing any exceptions. In this manner, thread execution is not interrupted when the queue is empty. 
 
+## Diagram
+![Image](https://github.com/NechitaRamonaAlexandra/MultiThreads/blob/main/diagram.png)
+
+## GUI
+The GUI was done using Java Swift.
+
+
+![Image](https://github.com/NechitaRamonaAlexandra/MultiThreads/blob/main/GUI.png)
+
+
